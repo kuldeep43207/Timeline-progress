@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Smart Bin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!----------------Custom CSS------------------> 
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/modules/platform-tour3.css">
+  <link rel="stylesheet" href="css/variables/variables.css">
+</head>
+<!----------------Body Start------------------>
+<body style="background: #fff;">
+  <!----------------Main Wrapper Start------------------>
+  <div class="main-wrapper container py-4 mt-5">
+
+    <!---------------Platform Tour----------------->
+    <div class="platform-tour-wrapper">
+      <div class="inliner"></div>
+      <div class="inlined">
+
+        <!-- Start component -->
+        <div class="progress-meter">
+          <div class="track">
+            <span class="progress"></span>
+          </div>
+          <ol class="progress-points" data-current="4">
+            <li class="progress-point">
+              <span class="label">Lorem ipsum</span>
+            </li>
+            <li class="progress-point">
+              <span class="label">Aliquam tincidunt</span>
+            </li>
+            <li class="progress-point">
+              <span class="label">Vestibulum auctor</span>
+            </li>
+            <li class="progress-point">
+              <span class="label">Lorem ipsum</span>
+            </li>
+            <li class="progress-point">
+              <span class="label">Aliquam tincidunt</span>
+            </li>
+          </ol>
+        </div>
+        <!-- End component -->
+
+      </div>
+    </div>  
+    <!---------------Platform Tour End----------------->
+  </div>
+
+  <!----------------Main Wrapper End------------------>
+
+  <!----------------Bootstrap Js------------------>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <!----------------Bootstrap Js------------------>
+
+  <script type="text/javascript">
+    (function() {  
+  var $point_arr, $points, $progress, $trigger, active, max, tracker, val;
+
+  $trigger   = $('.trigger').first();
+  $points    = $('.progress-points').first();
+  $point_arr = $('.progress-point');
+  $progress  = $('.progress').first();
+
+  val     = +$points.data('current') - 1;
+  max     = $point_arr.length - 1;
+  tracker = active = 0;
+
+  function activate(index) {
+    if (index !== active) {
+      active       = index;
+      var $_active = $point_arr.eq(active)
+      
+      $point_arr
+        .removeClass('completed active')
+        .slice(0, active).addClass('completed')
+      
+      $_active.addClass('active');
+      
+      return $progress.css('width', (index / max * 100) + "%");
+    }
+  };
+
+  $points.on('click', 'li', function(event) {
+    var _index;
+    _index  = $point_arr.index(this);
+    tracker = _index === 0 ? 1 : _index === val ? 0 : tracker;
+    
+    return activate(_index);
+  });
+
+  $trigger.on('click', function() {
+    return activate(tracker++ % 2 === 0 ? 0 : val);
+  });
+
+  setTimeout((function() {
+    return activate(val);
+  }), 1000);
+
+}).call(this);
+
+  </script>
+</body>
+<!----------------Body End------------------>
+</html>

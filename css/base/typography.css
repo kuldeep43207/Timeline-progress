@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	padding: 0;
+  height: 100vh;
+  background: #eeeeee;
+  color: var(--menu-color);
+  font-size: 13px;
+}
+
+.btn {
+  padding: .6rem 1rem !important;
+  font-size: .7rem !important;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;   
+  border-radius: 0 !important; 
+  line-height: 100%;
+
+}
+
+.btn:hover {
+  outline: 0;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15) !important;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15) !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, button, input, label{
+  font-weight: 300 !important;
+}
+
+td, th {
+  color: var(--menu-color);
+}

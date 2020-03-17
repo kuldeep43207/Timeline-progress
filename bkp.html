@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Smart Bin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!----------------Custom CSS------------------> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/sidebar.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/modules/device-connectivity.css">
+  <link rel="stylesheet" href="css/modules/dashboard-devices.css">
+  <link rel="stylesheet" href="css/modules/all-devices.css">
+  <link rel="stylesheet" href="css/responsive/responsive.css">
+  <link rel="stylesheet" href="css/variables/variables.css">
+</head>
+<!----------------Body Start------------------>
+<body>
+  <!----------------Main Wrapper Start------------------>
+  <div class="main-wrapper float-left w-100">
+    <div class="container-fluid p-0">
+
+      <!----------------Sidebar Start------------------>
+      <div class="nav-side-menu sidebar">
+        <div class="sidebar-wrapper">
+          <div class="brand">Smart Bin</div>
+          <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+          <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content collapse out">
+              <li data-toggle="collapse" data-target="#dashboard" class="collapsed active">
+                <a href="#">
+                  <i class="fas fa-tachometer-alt fa-lg"></i> <span class="menu-text">Dashboard</span> <span class="arrow"></span>
+                </a>
+              </li>
+
+              <ul class="sub-menu collapse" id="dashboard">
+                <li><a href="#">All Devices</a></li>
+                <li><a href="#">Netwok Dasboard</a></li>
+              </ul>
+
+              <li data-toggle="collapse" data-target="#alarms" class="collapsed">
+                <a href="#"><i class="far fa-clock fa-lg" style="margin-right: 5px;"></i> <span class="menu-text">Alarm Management</span> <span class="arrow"></span></a>
+              </li>
+              <ul class="sub-menu collapse" id="alarms">
+                <li><a href="#">CSS3 Animation</a></li>
+                <li><a href="#">General</a></li>
+                <li><a href="#">Buttons</a></li>
+              </ul>
+
+              <li data-toggle="collapse" data-target="#new" class="collapsed">
+                <a href="#"><i class="fas fa-columns fa-lg"></i> <span class="menu-text">KPI Dashboard</span> <span class="arrow"></span></a>
+              </li>
+              <ul class="sub-menu collapse" id="new">
+                <li>New New 1</li>
+                <li>New New 2</li>
+                <li>New New 3</li>
+              </ul>
+
+
+              <li>
+                <a href="#">
+                  <i class="fab fa-windows fa-lg"></i> <span class="menu-text"> Management</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-bug fa-lg"></i> <span class="menu-text">Report Management</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa fa-users fa-lg"></i> <span class="menu-text">Subscriber Management</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-align-justify fa-lg"></i> <span class="menu-text">Cluster Management</span> 
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-users-cog fa-lg"></i> <span class="menu-text">Group Management</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-hands-helping fa-lg"></i> <span class="menu-text">Help Support</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="sidebarToggler">
+            <a href="#" id="menu-action" class="btn btn-info icon-left " rol="button"></a>
+          </div>
+
+        </div>   
+      </div>
+      <!----------------Sidebar End------------------>
+
+
+      <!---------------Main Content------------------> 
+      
+      <main id="main">
+
+        <!------------------- Top Bar ----------------------->
+        <header id="header" class="top-bar">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <h4>All Devices</h4>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto"></ul>
+
+                  <ul class="navbar-nav">
+                    <li>
+                      <form class="form-inline my-2 my-lg-0 search-form">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-bell"></i><span class="badge badge-danger">4</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header> 
+
+        <!------------------- Top Bar End----------------------->
+
+        <div class="content">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-12 page-heading-primary">
+              <h2>All Devices</h2>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="all-devices-wrapper shadow-cols-wrapper pl-3 pr-3">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-2">
+                    <div class="bin-col mb-3">
+                      <img src="images/bin2.png" class="mw-100 w-100">
+                      <div class="bin-status inactive"></div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 device-battery-fill-details">
+                    <div class="bin-full-details">
+                      <div class="bin-location mb-3">
+                        <h4>New-Delhi, 28.6139° N, 77.2090° E</h4>
+                      </div>
+
+                      <div class="bin-id device-fill-col mb-3">
+                        <h4>Bin ID : <strong>873767232778237</strong></h4>
+                      </div>
+
+                      <div class="device-fill-col mb-3">
+                        <h4>Bin Status : <strong>Inactive</strong></h4>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 battery-col mb-3">
+                          <h4>Battery Level</h4>
+                          <div class="battery">
+                            <div class="progress">
+                              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 device-fill-col mb-3">
+                          <h4>Fill Level</h4>
+                          <div class="progress">
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bin-details">
+                      <h4><strong>Last Reported at: </strong> Mon,March 02 2020, 13:20:15, GMT+5:20 (India Standard Time) </h4>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="all-devices-wrapper shadow-cols-wrapper pl-3 pr-3">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-2">
+                    <div class="bin-col mb-3">
+                      <img src="images/bin2.png" class="mw-100 w-100">
+                      <div class="bin-status active"></div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 device-battery-fill-details">
+                    <div class="bin-full-details">
+                      <div class="bin-location mb-3">
+                        <h4>New-Delhi, 28.6139° N, 77.2090° E</h4>
+                      </div>
+
+                      <div class="bin-id device-fill-col mb-3">
+                        <h4>Bin ID : <strong>873767232778237</strong></h4>
+                      </div>
+
+                      <div class="device-fill-col mb-3">
+                        <h4>Bin Status : <strong>Inactive</strong></h4>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 battery-col mb-3">
+                          <h4>Battery Level</h4>
+                          <div class="battery">
+                            <div class="progress">
+                              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 device-fill-col mb-3">
+                          <h4>Fill Level</h4>
+                          <div class="progress">
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bin-details">
+                      <h4><strong>Last Reported at: </strong> Mon,March 02 2020, 13:20:15, GMT+5:20 (India Standard Time) </h4>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="all-devices-wrapper shadow-cols-wrapper pl-3 pr-3">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-2">
+                    <div class="bin-col mb-3">
+                      <img src="images/bin2.png" class="mw-100 w-100">
+                      <div class="bin-status active"></div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 device-battery-fill-details">
+                    <div class="bin-full-details">
+                      <div class="bin-location mb-3">
+                        <h4>New-Delhi, 28.6139° N, 77.2090° E</h4>
+                      </div>
+
+                      <div class="bin-id device-fill-col mb-3">
+                        <h4>Bin ID : <strong>873767232778237</strong></h4>
+                      </div>
+
+                      <div class="device-fill-col mb-3">
+                        <h4>Bin Status : <strong>Inactive</strong></h4>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 battery-col mb-3">
+                          <h4>Battery Level</h4>
+                          <div class="battery">
+                            <div class="progress">
+                              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 device-fill-col mb-3">
+                          <h4>Fill Level</h4>
+                          <div class="progress">
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bin-details">
+                      <h4><strong>Last Reported at: </strong> Mon,March 02 2020, 13:20:15, GMT+5:20 (India Standard Time) </h4>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="all-devices-wrapper shadow-cols-wrapper pl-3 pr-3">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bin-col mb-3">
+                      <img src="images/bin2.png" class="mw-100 w-100">
+                      <div class="bin-status inactive"></div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 device-battery-fill-details">
+                    <div class="bin-full-details">
+                      <div class="bin-location mb-3">
+                        <h4>New-Delhi, 28.6139° N, 77.2090° E</h4>
+                      </div>
+
+                      <div class="bin-id device-fill-col mb-3">
+                        <h4>Bin ID : <strong>873767232778237</strong></h4>
+                      </div>
+
+                      <div class="device-fill-col mb-3">
+                        <h4>Bin Status : <strong>Inactive</strong></h4>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 battery-col mb-3">
+                          <h4>Battery Level</h4>
+                          <div class="battery">
+                            <div class="progress">
+                              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 device-fill-col mb-3">
+                          <h4>Fill Level</h4>
+                          <div class="progress">
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bin-details">
+                      <h4><strong>Last Reported at: </strong> Mon,March 02 2020, 13:20:15, GMT+5:20 (India Standard Time) </h4>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>         
+
+      </div>
+
+    </main>
+    <!---------------Main Content------------------> 
+
+  </div>
+</div>
+
+<div class="back-top-top-btn">
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+</div>
+<!----------------Main Wrapper End------------------>
+
+<!----------------Bootstrap Js------------------>
+<script src="js/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false" 
+type="text/javascript"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<!----------------Bootstrap Js------------------>
+
+<!----------------Custom Js------------------> 
+<script src="js/main.js"></script>
+</body>
+<!----------------Body End------------------>
+</html>

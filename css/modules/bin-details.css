@@ -1,0 +1,327 @@
+.bin-details-wrap {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(255, 152, 0, 0);
+  margin-bottom: 15px;  	
+}
+
+.bin-full-details-col .list-group-item {
+  background: transparent;
+  padding: 0px 0px 15px 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 0;
+}
+
+.battery:after {
+  background-color: #fff;
+  border: 2px solid #000;
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: -6px;
+  top: 6px;
+  width: 6px;
+}
+
+.battery .battery-level {
+  height: 100%;
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  color: #fff; 
+}
+
+.battery:after {
+  background-color: #fff;
+  border: 2px solid #b3b3b3;
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: initial;
+  top: 100%;
+  width: 70px;
+  left: 37px;
+  background: #b3b3b3;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.battery {
+  background-color: #fff;
+  border: 2px solid #b3b3b3;
+  height: 200px;
+  margin-right: auto;
+  position: relative;
+  width: 150px;
+  transform: rotate(180deg);
+  margin-top: 15px !important;
+  border-radius: 5px;
+}
+
+.battery .battery-level {
+  height: 100%;
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-size: 1rem 1rem;  
+  transform: rotate(180deg);
+}
+
+.battery .battery-level.full {
+  background-color: #666;
+  color: #fff;
+  width: 100%;
+}
+
+.battery .battery-level.high {
+  background-color: #66CD00;
+  color: var(--menu-color);
+  max-height: 75%;
+}
+.battery .battery-level.medium {
+  background-color: #FCD116;
+  color: var(--menu-color);
+  max-height: 50%;
+}
+
+.battery .battery-level.empty {
+  background-color: transparent;
+  color: var(--menu-color);
+  min-height: 0%;  
+}
+
+.battery .battery-level.low {
+  background-color: #FF3333;
+  color: #fff;
+  max-height: 25%;
+  min-height: 0%;
+}
+
+.smart-bin:after {
+  border: 2px solid #b3b3b3;
+  background-color: #b3b3b3;
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  width: 190px;
+  top: 100%;
+  padding: 3px 33px;
+  left: -15px;
+  border-radius: 5px;
+}
+
+.smart-bin:before {
+  content: "";
+  position: absolute;
+  border: 8px solid #b3b3b3;
+  top: 106%;
+  height: 15px;
+  left: 42px;
+  width: 75px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.responsive-cols-bin {
+  display: none;
+}
+
+.smart-bin {
+  background-color: #fff;
+  border: 5px solid #b3b3b3;
+  margin-right: auto;
+  position: relative;
+  width: 165px;
+  height: 200px;
+  transform: rotate(180deg);
+  border-radius: 7px 7px 0px 0px;
+  margin-top: 22px !important;
+}
+
+.smart-bin .smart-bin-level {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-size: 1rem 1rem;
+  transform: rotate(180deg);
+}
+
+.smart-bin .smart-bin-level.full {
+  background-color: #666;
+  color: #fff;
+  max-height: 100%;
+  height: 100%;
+}
+
+.smart-bin .smart-bin-level.high {
+  background-color: #FF3333;
+  color: #ffffff;
+  min-height: 75%;
+  max-height: 100%;
+}
+.smart-bin .smart-bin-level.medium {
+  background-color: #FCD116;
+  color: var(--menu-color);
+  min-height: 50%;
+}
+.smart-bin .smart-bin-level.low {
+  background-color: #66CD00;
+  color: var(--menu-color);
+  min-height: 25%;
+}
+
+.smart-bin .smart-bin-level.empty {
+  color: var(--menu-color);
+}
+
+.bin-reported {
+  font-size: 12px;
+  padding-left: 0px;
+}
+
+.bin-img img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.bin-device-details .counter {
+  margin-top: 30px;
+}
+
+.battery-status-col {
+  position: relative;
+}
+
+.battery-status-text {
+  position: absolute;
+  right: auto;
+  top: 0;
+  left: 203px;
+  margin-top: 12px;
+}
+
+.battery-status-text > div {
+  padding-bottom: 28px;
+}
+
+.battery-status-text > div:before {
+  content: "";
+  border-top: 1px solid #000;
+  position: absolute;
+  width: 34px;
+  left: -37px;
+}
+
+.battery-status-text .low-status:before {
+  content: "";
+  top: 152px;
+  position: absolute;
+}
+
+.battery-status-text .medium-status:before {
+  top: 102px;
+}
+
+.battery-status-text .empty-status:before {
+  top: 200px;
+}
+
+.battery-status-text .full-status:before {
+  top: 6px;
+}
+
+.battery-status-text .high-status:before {
+  top: 54px;
+}
+
+.bin-status-text > div {
+  padding-bottom: 40px;
+}
+
+.bin-status-col {
+  position: relative;
+}
+
+.bin-status-text {
+  position: absolute;
+  right: auto;
+  top: 0;
+  margin-top: 18px;
+  left: 210px;
+}
+
+.bin-details-wrap .canvasjs-chart-canvas {
+  border-radius: 5px !important;
+}
+
+.bin-status-text > div {
+  padding-bottom: 27px;
+}
+
+.bin-status-text > div:before {
+  content: "";
+  border-top: 1px solid #000;
+  position: absolute;
+  width: 27px;
+  left: -32px;
+}
+
+.bin-status-text .low-status:before {
+  content: "";
+  top: 10px;
+  position: absolute;
+}
+
+.bin-status-text .full-status:before {
+  content: "";
+  top: 10px;
+  position: absolute;
+}
+
+.bin-status-text .high-status:before {
+  top: 56px;
+}
+
+.bin-status-text .medium-status:before {
+  top: 104px;
+}
+
+.bin-status-text .low-status:before {
+  top: 150px;
+}
+
+.bin-status-text .empty-status:before {
+  top: 196px;
+}
+
+.charts-col-temp .bin-details-wrap,
+.charts-col-bin .bin-details-wrap,
+.charts-col-battery .bin-details-wrap, {
+  height: 100%;
+}
+
+.charts-col-temp h4, .charts-col-bin h4, .charts-col-battery h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

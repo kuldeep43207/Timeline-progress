@@ -1,0 +1,109 @@
+.battery-col h4 {
+  font-size: 14px;
+}
+
+.battery:after {
+  background-color: #fff;
+  border: 2px solid #000;
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: -6px;
+  top: 6px;
+  width: 6px;
+}
+.battery {
+  background-color: #fff;
+  border: 2px solid #000;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 55px;
+  margin: 0;
+}
+
+.battery .progress {
+  height: 100%;
+  border-radius: 0px;
+}
+
+.device-fill-col h4 {
+  font-size: 14px;
+}
+
+.device-fill-col .progress {
+  height: 2rem;
+}
+
+.bin-status.active {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  position: absolute;
+  border: 10px solid #28a745d1;
+  border-radius: 50%;
+  bottom: -8px;
+  right: -11px;
+}
+
+.bin-status.inactive {
+  width: 30px;
+  height: 30px;
+  background: #ffffff9e;
+  position: absolute;
+  border: 10px solid #dc3545e0;
+  border-radius: 50%;
+  bottom: -8px;
+  right: -11px;
+}
+
+.bin-col {
+  position: relative;
+}
+
+.bin-location h4, .bin-details h4 {
+  font-size: 14px;
+}
+
+.bin-location h4 {
+  font-weight: 500 !important;
+}
+
+.bin-full-details {
+  padding: 0px 15px;
+}
+
+.bin-details-table table {
+  background: var(--sidebar-bg);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);  
+}
+
+.bin-details-table .btn {
+  background: var(--menu-bg-color);
+  border: 1px solid var(--menu-bg-color);
+  transition: all 0.5s;
+}
+
+.bin-details-table p {
+  margin: 0;
+}
+
+.bin-details-table th, .bin-details-table td {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.bin-details-table .btn:hover {
+  background: var(--sidebar-bg);
+  border: 1px solid var(--menu-bg-color);
+  color: var(--menu-bg-color);
+  transition: all 0.5s;
+}
+
+.show-entries label {
+  font-size: 14px;
+  font-weight: 300;
+}

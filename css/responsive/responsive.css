@@ -1,0 +1,134 @@
+@media (min-width: 992px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  #main {
+    width: 100%;
+    float: right;
+    padding: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .sidebarToggler{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .responsive-col-battery {
+    display: none;
+  }  
+}
+
+@media (max-width: 991px) {
+  .nav-side-menu {
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    opacity: 1;
+    z-index: 999;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+
+  #header {
+    position: static !important;
+    margin-top: 65px;
+    padding-left: 15px;
+    margin-bottom: 0;  
+  }
+}
+
+@media (max-width: 575px){
+  .all-devices-main .device-cols,
+  .home-page .device-cols {
+    padding-right: 0px;
+  }  
+
+  .bin-img img {
+    margin-top: 15px;
+  }
+
+  .responsive-cols-bin {
+    display: block;
+  }
+
+  .battery-status-col {
+    margin-bottom: 20px;
+  }  
+
+  .charts-col-bin  {
+    padding: 0px 15px !important;
+  }
+
+  .bin-img {
+    padding-left: 0px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-side-menu li a {
+   margin: 0; 
+   padding-left: 10px;
+   padding-right: 10px;
+   font-size: 11px;
+ }
+
+ .devices-counters .count-title {
+  font-size: 20px;
+}
+
+.smart-bin:after {
+  width: 174px;
+}
+
+.smart-bin {
+  width: 150px;
+}
+
+}
+
+
+@media (max-width: 767px) {
+  .all-devices-main .counter {
+    margin-top: 20px;
+  }  
+
+  .bin-device-details .counter {
+    margin-top: 20px;
+  }
+
+  .home-page .devices-counters .counter {
+    margin-bottom: 35px;
+  }  
+}

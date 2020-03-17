@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Smart Bin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!----------------Custom CSS------------------> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/sidebar.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/modules/device-connectivity.css">
+  <link rel="stylesheet" href="css/modules/dashboard-devices.css">
+  <link rel="stylesheet" href="css/modules/all-devices.css">
+  <link rel="stylesheet" href="css/modules/bin-details.css">
+  <link rel="stylesheet" href="css/responsive/responsive.css">
+  <link rel="stylesheet" href="css/variables/variables.css">
+</head>
+<!----------------Body Start------------------>
+<body>
+  <!----------------Main Wrapper Start------------------>
+  <div class="main-wrapper float-left w-100">
+    <!----------------Sidebar Start------------------>
+    <div class="nav-side-menu sidebar position-sticky-sm">
+      <div class="brand">Smart Bin</div>
+      <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+      <div class="menu-list">
+        <ul class="nav nav-pills flex-column menu-content collapse out" id="menu-content">
+          <li class="nav-item "><a class="nav-link collapsed active" href="#submenu1" data-toggle="collapse" data-target="#submenu1">
+            <i class="fas fa-tachometer-alt"></i>  <span>Dashboard</span></a>
+
+            <div class="collapse" id="submenu1" aria-expanded="false">
+              <ul class="flex-column pl-2 nav">
+                <li class="nav-item"><a class="nav-link py-0" href="all-devices.html">All Devices</a></li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Netwok Dasboard</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2"><i class="far fa-clock"></i> <span>Alarm Management</span></a>
+            <div class="collapse" id="submenu2" aria-expanded="false">
+              <ul class="flex-column pl-2 nav">
+                <li class="nav-item"><a class="nav-link py-0" href="">Orders</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Customers</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-columns"></i> <span>KPI Dashboard</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-windows"></i>  <span>System Management</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-bug"></i> <span>Report Management</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-users "></i>  <span>Subscriber Management</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-align-justify"></i> <span> Cluster Management</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-users-cog"></i> <span>Group Management</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="platform-tour.html"><i class="fas fa-hands-helping"></i>  <span>Platform Tour</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-hands-helping"></i>  <span>Help Support</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <!----------------Sidebar End------------------>
+    <!------------------- Top Bar ----------------------->
+    <header id="header" class="top-bar">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <nav class="navbar navbar-expand-sm navbar-light">
+            <h4>Dashboard</h4>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto"></ul>
+
+              <ul class="navbar-nav">
+                <li>
+                  <form class="form-inline my-2 my-lg-0 search-form">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-bell"></i><span class="badge badge-danger">4</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header> 
+
+    <!------------------- Top Bar End----------------------->
+
+    <!---------------Main Content------------------> 
+
+    <main id="main" class="home-page">
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 page-heading">
+            <h2>Dashboard Network</h2>
+          </div>
+        </div>
+
+        <div class="devices-counters pl-3">
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 device-cols">
+              <div class="counter">
+                <div class="device-icons"><i class="fas fa-trash fa-2x"></i></div>
+                <h2 class="timer count-title count-number" data-to="1000" data-speed="1500"></h2>
+                <p class="count-text ">Total Devices</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 device-cols">
+             <div class="counter">
+              <div class="device-icons"><i class="fas fa-2x fa-wifi"></i></div>
+              <h2 class="timer count-title count-number" data-to="950" data-speed="1500"></h2>
+              <p class="count-text ">Connected Devices</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12 device-cols">
+            <div class="counter">
+              <div class="device-icons"><i class="fas fa-plug fa-2x"></i></div>
+              <h2 class="timer count-title count-number" data-to="50" data-speed="1500"></h2>
+              <p class="count-text ">Disconnected Devices</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12 device-cols">
+            <div class="counter">
+              <div class="device-icons"><i class="fas fa-globe fa-2x"></i></div>
+              <h2 class="timer count-title count-number" data-to="50" data-speed="1500"></h2>
+              <p class="count-text ">SmartBin Firmware</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 device-cols">
+            <div class="counter">
+              <div class="device-icons"><i class="fas fa-trash fa-2x"></i></div>
+              <h2 class="timer count-title count-number" data-to="1000" data-speed="1500"></h2>
+              <p class="count-text ">Garbage Level (mm)</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12 device-cols">
+           <div class="counter">
+            <div class="device-icons"><i class="fas fa-2x fa-fan fa-spin"></i></div>
+            <h2 class="timer count-title count-number" data-to="950" data-speed="1500"></h2>
+            <p class="count-text ">Temper Status</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 device-cols">
+          <div class="counter">
+            <div class="device-icons"><i class="fas fa-trash-alt fa-2x"></i></div>
+            <h2 class="timer count-title count-number" data-to="50" data-speed="1500"></h2>
+            <p class="count-text ">Test Status</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 device-cols">
+          <div class="counter">
+            <div class="device-icons"><i class="fas fa-temperature-low fa-2x"></i></div>
+            <h2 class="timer count-title count-number" data-to="25" data-speed="1500"></h2>
+            <p class="count-text ">Temperature</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 device-cols">
+          <div class="counter">
+            <div class="device-icons"><i class="fas fa-battery-three-quarters fa-2x"></i></div>
+            <h2 class="timer count-title count-number" data-to="22" data-speed="1500"></h2>
+            <p class="count-text ">Battery</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 device-cols">
+          <div class="counter">
+            <div class="device-icons"><i class="fas fa-trash fa-2x"></i></div>
+            <h2 class="timer count-title count-number" data-to="90" data-speed="1500"></h2>
+            <p class="count-text ">Bin Fill</p>
+          </div>
+        </div>
+      </div>  
+    </div>  
+
+
+    <!-------------Device Location------------->
+
+  </div>         
+
+</main>
+<!---------------Main Content------------------> 
+
+</div>
+
+<div class="sidebarToggler">
+  <a href="#" id="menu-action" class="btn btn-info icon-left " rol="button"></a>
+</div>
+
+<div class="back-top-top-btn">
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+</div>
+<!----------------Main Wrapper End------------------>
+
+<!----------------Bootstrap Js------------------>
+<script src="js/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false" 
+type="text/javascript"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<!----------------Bootstrap Js------------------>
+
+<!----------------Custom Js------------------> 
+<script src="js/main.js"></script>
+</body>
+<!----------------Body End------------------>
+</html>

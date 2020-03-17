@@ -1,0 +1,277 @@
+.nav-side-menu {
+  overflow: auto;
+  background-color: var(--sidebar-bg);
+  position: fixed;
+  top: 0px;
+  padding-left: 0px;
+  height: 100%;
+  width: 220px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;    
+  color: #3c4858;
+  opacity: 0.85;
+  box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+
+.siderbar-shrink .brand {
+  width: 65px !important;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;  
+}
+
+.menu-list {
+  background: var(--sidebar-bg);
+  padding-top: 50px;
+}
+
+.nav-side-menu .brand {
+  background-color: var(--sidebar-bg);
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  width: 220px;
+  font-size: 14px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+  position: fixed;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;  
+}
+
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f13a";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+  font-weight: 900;
+}
+
+.nav-pills .nav-link.active span, .nav-pills .show>.nav-link span{
+  color: #ffffff;
+}
+
+.nav-side-menu li a.active {
+  border-left: 0px solid #d19b3d;
+  background-color: var(--menu-bg-color) !important;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);  
+  border-radius: 0;
+}
+.nav-side-menu ul .sub-menu li a.active,
+.nav-side-menu li .sub-menu li a.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: var(--sidebar-bg);
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid var(--sidebar-bg);
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: var(--sidebar-bg);
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+.nav-side-menu ul li {
+  padding-left: 0px;
+  border-left: 0px solid var(--menu-bg-color);
+  border-bottom: 0px solid #23282e;
+  margin-bottom: 10px;
+  padding: 0px 0px;
+}
+
+.nav-side-menu ul li ul > li {
+  padding-left: 0px;
+  border-left: 0px solid var(--menu-bg-color);
+  border-bottom: 0px solid #23282e;
+  margin-bottom: 0px;
+  padding: 0px 0px;
+}
+
+.nav-side-menu ul li ul > li a {
+  text-decoration: none;
+  margin: 0px 0px 0;
+  border-radius: 3px;
+  color: #3c4858;
+  padding: 0px 10px;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.siderbar-shrink.nav-side-menu li {
+  text-align: center;
+  padding: 0px 0px;
+}
+
+
+.nav-side-menu li a {
+  text-decoration: none;
+  margin: 0px 0px 0;
+  border-radius: 3px;
+  color: #3c4858;
+  padding: 0px 10px;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.nav-side-menu li a span {
+  font-weight: 500 !important;
+  padding-left: 10px;
+}
+
+.nav-side-menu li a:hover {
+  background-color: #e0e0e0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav-side-menu li.active a {
+  color:  var(--sidebar-bg);
+}
+
+.nav-side-menu li.active a span {
+  color: var(--sidebar-bg);
+}
+
+.nav-side-menu li.active:hover {
+  color:  var(--sidebar-bg);
+  background: var(--menu-bg-color);
+}
+
+.menu-content .sub-menu {
+  padding-left: 30px;
+}
+
+#menu-content .sub-menu li a {
+  margin-left: 0px;
+}
+
+#menu-content .sub-menu li:hover {
+  background-color: #e0e0e0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/******************* siderbar-shrink *************************/
+.siderbar-shrink .menu-list li .menu-text, .siderbar-shrink .menu-list li .arrow {
+  display: none;
+}
+
+.siderbar-shrink li a span {
+  display: none;
+}
+
+.siderbar-shrink li a:after {
+  display: none;
+}
+
+.siderbar-shrink .nav-side-menu li:hover {
+  border-left: 0px solid var(--menu-bg-color) !important;
+  background-color: #e0e0e0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebarToggler {
+  position: fixed;
+  left: 200px;
+  top: 240px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; 
+}
+
+.sidebarToggler a {
+  border-radius: 60% !important;
+  width: 40px;
+  float: left;
+  height: 40px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;  
+  background: var(--menu-bg-color);
+  border: 1px solid var(--menu-bg-color);
+  position: relative;
+  z-index: 99999;
+}
+
+.sidebarToggler a:focus, .sidebarToggler a:hover { 
+  background: var(--menu-bg-color) !important;
+  border: 1px solid var(--menu-bg-color) !important;
+}
+
+.sidebarToggler-shrink {
+  left: 3.5%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;  
+}
+
+.siderbar-shrink {
+  width: 65px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;  
+  overflow-x: hidden;
+}
+
+.sidebarToggler .icon-left:before {
+  content: '\f053';
+  position: absolute;
+  font-family: fontAwesome; 
+}
+
+.sidebarToggler .icon-right:before {
+  content: '\f054';
+  position: absolute;
+  font-family: fontAwesome; 
+}
+
+.menu-list .nav-link[data-toggle]:not(.collapsed):after {
+  content: "▴";
+  float: right;
+  font-size: 20px;    
+}
+
+.menu-list .nav-link[data-toggle].collapsed:after {
+  content: "▾";
+  float: right;
+  font-size: 20px;
+}
+
+
+/******************* siderbar-shrink End*************************/
