@@ -10,12 +10,14 @@
 
 .horizontal-tabs-steps .nav-item:after {
   content: "";
-  border-top: 5px dotted #88c0fd;
+  border-top: 5px dotted #73b6ff;
   position: absolute;
   z-index: 0;
   top: 12px;
   width: 265px;
   left: 0px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s;
 }
 
 .horizontal-tabs-steps .nav-item:last-child:after {
@@ -25,12 +27,14 @@
 
 .horizontal-tabs-steps .nav-item.complete-step:after {
   content: "";
-  border-top: 5px dotted #4e80d6;
+  border-top: 5px dotted #4d7ed2;
   position: absolute;
   z-index: 0;
   top: 12px;
   width: 265px;
   left: 0px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s
 }
 
 .horizontal-tabs-steps .nav-link {
@@ -44,7 +48,7 @@
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  border: 2px solid #4e80d6;
+  border: 2px solid #4d7ed2;
   z-index: 1;
   position: relative;
 }
@@ -113,9 +117,9 @@
   font-size: 12px !important;
 }
 
-.vertical-tabs-steps .nav-link{
+.vertical-tabs-steps .nav-link {
   color: #3c4858;
-  border: 2px solid #4e80d6;
+  border: 1px solid #4d7ed2;
   font-size: 12px !important;
   margin-bottom: 45px;
   border-radius: 15px 15px 0px 15px;
@@ -127,7 +131,7 @@
   width: 80px;
 }
 
-.vertical-tabs-steps .nav-link.checked-steps{
+.vertical-tabs-steps .nav-link.checked-steps {
   text-align: left;
 }
 
@@ -149,13 +153,15 @@
 
 .vertical-tabs-steps .nav-item:after {
   content: "";
-  border-bottom: 4px dotted #88c0fd;
+  border-bottom: 3px dotted #73b6ff;
   position: absolute;
   width: 95px;
   transform: rotate(90deg);
   z-index: 0;
   left: -10px;
   top: 50px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s;
 }
 
 .vertical-tabs-content {
@@ -168,7 +174,7 @@
 
 .vertical-tabs-steps .checked-steps {
   background-color: #22437c !important;
-  border: 2px solid #22437c !important;
+  border: 1px solid #22437c !important;
   color: #fff !important;
 }
 
@@ -194,11 +200,13 @@
   z-index: 0;
   left: -10px;
   top: 50px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s;
 }
 
 .vertical-tabs-steps .nav-item.complete-step:after {
   content: "";
-  border-bottom: 4px dotted #4e80d6 !important;
+  border-bottom: 3px dotted #4d7ed2 !important;
   position: absolute;
   width: 95px;
   transform: rotate(90deg);
